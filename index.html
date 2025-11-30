@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Adrian Odero Odero — CV</title>
+  <meta name="description" content="One-page digital CV for Adrian Odero Odero: Electrical & Telecommunication Engineer, CCNA-certified." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Elegant, readable typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #d4af37; /* subtle gold divider */
+  padding-bottom: 0.25rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Buttons & Links */
+button, a {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  p, li {
+    font-size: 0.95rem;
+  }
+  button, a {
+    width: 100%; /* full-width tap targets */
+    text-align: center;
+  }
+}
+    :root{
+      --bg:#0b0b0b;
+      --text:#f5f5f5;
+      --muted:#b9b9b9;
+      --gold:#d4af37;
+      --card:#111213;
+      --accent:#e6c65b; /* lighter gold for hover */
+      --maxw:960px;
+    }
+    h2 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 16px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--gold); /* subtle divider */
+  padding-bottom: 6px;
+}
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:var(--gold);text-decoration:none}
+    a:hover{color:var(--accent)}
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+    header{
+      border-bottom:1px solid #1c1c1c;
+      background:linear-gradient(180deg,#0b0b0b 0%, #0f0f0f 100%);
+    }
+    .hero{padding:72px 0 48px}
+    .name{
+      font-family:"Playfair Display", serif;
+      font-weight:700;
+      font-size:42px;
+      letter-spacing:0.2px;
+      margin:0 0 8px;
+    }
+    .title{color:var(--muted); font-size:18px; margin:0 0 16px}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 24px}
+    .tag{
+      border:1px solid #2a2a2a;
+      color:var(--muted);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+    }
+    .actions{display:flex; flex-wrap:wrap; gap:12px}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 16px; border-radius:8px; border:1px solid #2a2a2a;
+      color:var(--text); background:transparent; cursor:pointer; font-weight:500;
+      transition:all .2s ease;
+    }
+    .btn.primary{background:var(--gold); color:#0b0b0b; border-color:var(--gold)}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 6px 16px rgba(0,0,0,0.25)}
+    .grid{display:grid; gap:24px; grid-template-columns:1fr; margin:36px 0 0}
+    @media(min-width:900px){ .grid{grid-template-columns:1.2fr .8fr} }
+    section{padding:36px 0; border-bottom:1px solid #151515}
+    h2{
+      font-size:18px; letter-spacing:1px; text-transform:uppercase;
+      color:var(--gold); margin:0 0 16px; font-weight:700;
+    }
+    .card{
+      background:var(--card); border:1px solid #171717; border-radius:12px;
+      padding:20px;
+    }
+    .list{list-style:none; padding:0; margin:0; display:grid; gap:12px}
+    .item-title{font-weight:600}
+    .muted{color:var(--muted)}
+    .two-col{display:grid; grid-template-columns:1fr; gap:12px}
+    @media(min-width:700px){ .two-col{grid-template-columns:1fr 1fr} }
+    footer{padding:28px 0; color:var(--muted); text-align:center}
+    .small{font-size:13px}
+    /* Accessibility helpers */
+    .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <div class="wrap hero">
+      <h1 class="name">Adrian Odero Odero</h1>
+      <p class="title">Electrical & Telecommunication Engineer • CCNA • Oracle Cloud Foundations</p>
+
+      <div class="tags" aria-label="Key skills">
+        <span class="tag">Network Administration</span>
+        <span class="tag">Troubleshooting</span>
+        <span class="tag">Telecom Systems Design</span>
+        <span class="tag">Cloud Infrastructure</span>
+        <span class="tag">Leadership</span>
+      </div>
+
+      <div class="actions" aria-label="Primary actions">
+        <a class="btn primary" href="Adrian_Odero_Odero_CV.pdf" download>Download CV (PDF)</a>
+        <a class="btn" href="mailto:your.email@example.com" aria-label="Email Adrian">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+        <a class="btn" href="#contact" aria-label="Scroll to contact">Contact details</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" role="main">
+    <div class="grid">
+      <section aria-labelledby="profile-h">
+        <h2 id="profile-h">Profile</h2>
+        <div class="card">
+          <p>
+            Methodical, resilient, and creative engineer specializing in network administration, telecom systems, and cloud foundations.
+            Experienced in leading teams, architecting reliable infrastructure, and delivering clean, brand-consistent technical work.
+          </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="skills-h">
+        <h2 id="skills-h">Skills</h2>
+        <div class="card">
+          <ul class="list two-col">
+            <li>
+              <span class="item-title">Networking</span><br>
+              <span class="muted">Routing & switching, VLANs, ACLs, WAN, TCP/IP</span>
+            </li>
+            <li>
+              <span class="item-title">Troubleshooting</span><br>
+              <span class="muted">Layered diagnostics, root cause analysis, incident handling</span>
+            </li>
+            <li>
+              <span class="item-title">Telecom systems</span><br>
+              <span class="muted">Structured cabling, RF basics, fiber, site surveys</span>
+            </li>
+            <li>
+              <span class="item-title">Cloud</span><br>
+              <span class="muted">OCI foundations, virtualization concepts, IAM</span>
+            </li>
+            <li>
+              <span class="item-title">Leadership</span><br>
+              <span class="muted">Team supervision, stakeholder communication, planning</span>
+            </li>
+            <li>
+              <span class="item-title">Branding</span><br>
+              <span class="muted">Luxury‑minimalist design, documentation systems</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section aria-labelledby="experience-h">
+      <h2 id="experience-h">Experience</h2>
+      <div class="card">
+    <ul class="list">
+      <li>
+        <span class="item-title">Business Developer — Textpie Africa</span><br>
+        <span class="muted">May 2022 – Present • ~3 years 6 months</span>
+      </li>
+      <li>
+        <span class="item-title">Technical Head — Yago Electrical & Refrigeration Services Ltd</span><br>
+        <span class="muted">Mar 2019 – Sep 2021 • ~2 years 7 months</span>
+      </li>
+      <li>
+        <span class="item-title">Electrical Engineering Intern — H Young & Co (EA) Ltd</span><br>
+        <span class="muted">Oct 2018 – Jan 2019 • ~4 months</span>
+      </li>
+      <li>
+        <span class="item-title">Telecommunications Intern — Kenya Wildlife Service</span><br>
+        <span class="muted">Aug 2016 – Sep 2016 • ~2 months</span>
+      </li>
+      <li>
+        <span class="item-title">Electrical Intern — Menengai Oils Refinery Ltd</span><br>
+        <span class="muted">Jun 2016 – Jul 2016 • ~2 months</span>
+      </li>
+    </ul>
+    <p class="muted"><strong>Total professional experience:</strong> ~9 years (including internships)</p>
+    <div class="actions" style="margin-top:16px;">
+      <a class="btn primary" href="Adrian_Odero_Odero_CV.pdf" download>Download Full CV (PDF)</a>
+    </div>
+    </div>
+    </section>
+
+    <section aria-labelledby="education-h">
+      <h2 id="education-h">Education</h2>
+      <div class="card">
+    <ul class="list">
+      <li>
+        <span class="item-title">BSc Electrical & Telecommunication Engineering (Second Class Lower) — Multimedia University of Kenya</span><br>
+        <span class="muted">Nov 2018</span>
+      </li>
+      <li>
+        <span class="item-title">Kenya Certificate of Secondary Education — Maranda High School</span><br>
+        <span class="muted">Nov 2012</span>
+      </li>
+    </ul>
+   </div>
+    </section>
+
+    <section aria-labelledby="certifications-h">
+      <h2 id="certifications-h">Certifications</h2>
+       <div class="card">
+    <ul class="list">
+      <li>
+        <span class="item-title">Oracle Cloud Infrastructure Certified Foundations Associate — Oracle</span><br>
+        <span class="muted">Oct 2025</span>
+      </li>
+      <li>
+        <span class="item-title">Cisco CCNA — African Advanced Level Telecommunications Institute</span><br>
+        <span class="muted">Jun 2025</span>
+      </li>
+    </ul>
+  </div>
+
+
+    </section>
+
+    <section aria-labelledby="referees-h">
+  <h2 id="referees-h">Referees</h2>
+  <div class="card">
+    <ul class="list two-col">
+      <li>
+        <span class="item-title">Robert Magani — Director Sales, Textpie Africa</span><br>
+        <span class="muted">
+          Phone: <a href="tel:+254701243646">0701 243 646</a><br>
+          Email: <a href="mailto:">[no email provided]</a>
+        </span>
+      </li>
+      <li>
+        <span class="item-title">Stephen Oloo — Head Technician, Yago Electrical</span><br>
+        <span class="muted">
+          Phone: <a href="tel:+254717377765">0717 377 765</a><br>
+          Email: <a href="mailto:">[no email provided]</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <div class="card">
+        <ul class="list">
+          <li>
+            <span class="item-title">Email</span><br>
+            <a href="mailto:odeshadrian@gmail.com">odeshadrian@gmail.com</a>
+          </li>
+          
+          <li>
+            <span class="item-title">Phone No</span><br>
+            <a>+254 725 449 820</a>
+          </li>
+
+          <li>
+            <span class="item-title">LinkedIn</span><br>
+            <a href="https://www.linkedin.com/in/adrian-odero-89436318b/" target="_blank" rel="noopener">https://www.linkedin.com/in/adrian-odero-89436318b/</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+  <div class="wrap">
+    <p class="small">© 2025 Adrian Odero Odero • Minimalist CV</p>
+    <div class="actions" style="margin-top:12px;">
+      <a class="btn primary" href="Adrian_Odero_Odero_CV.pdf" download>Download CV</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
